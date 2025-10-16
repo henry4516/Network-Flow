@@ -165,7 +165,6 @@ def cut(vertices, edges):
     """
     cut(nodes, edges) returns the cut induced by nodes.
     cut: (setof Vertex) (setof Edge) -> (setof Edge)
-    Cost: O(nm), n is the number of vertices, m is the number of edges.
     
     """
     cut = set()
@@ -182,7 +181,6 @@ def incident_edges(edges, v):
     """
     incident_edges(edges, v) returns the set of edges in edges with one endpoint v.
     incident_edges: (setof Edge) Vertex -> (setof Edge)
-    Cost: O(m), m is the number of edges.
 
     """
     return {edge for edge in edges if v in edge}
@@ -191,7 +189,6 @@ def neighbours(edges, v):
     """
     neighbours(edges, vertex) returns the vertices that are incident to v.
     neighbours: (setof Edge) Vertex -> (setof Vertex)
-    Cost: O(m), m is the number of edges in edges.
 
     """
     return {edge.other(v) for edge in edges if not edge.other(v) is False}
@@ -206,7 +203,6 @@ def if_connected(edges, vertices):
     Method 2: BFS with colors to explore all vertices.
 
     if_connected: (setof Edge) (setof Vertex) -> Bool
-    Cost: O()
     
     """
     
@@ -260,7 +256,6 @@ def find_path(edges, i, j, visited_v = None, length = 0, avoid_edges = None, pro
     use DFS logic.
     find_path: (setof Edge) Vertex Vertex Edge (setof Vertex) Bool -> (anyof Path False)
     Requires: not used for finding cycle.
-    Cost: O()
 
     """
     assert i != j, "cannot use for cycle"
@@ -494,7 +489,6 @@ def head_arcs(node, arcs):
     """
     head_arcs(node, arcs) returns a set of arcs with head node.
     head_arcs: Node (setof Arc) -> (setof Arc)
-    Cost: O(m), m is the number of arcs
     
     """
     """
@@ -509,7 +503,6 @@ def tail_arcs(node, arcs):
     """
     tail_arcs(node, arcs) returns a set of arcs with tail node.
     head_arcs: Node (setof Arc) -> (setof Arc)
-    Cost: O(m), m is the number of arcs
     
     """
     """
@@ -525,7 +518,6 @@ def dicut(nodes, arcs):
     """
     dicut(nodes, arcs) returns the cut of arcs induced by nodes.
     dicut: (setof Node) (setof Arc) -> (setof Arc)
-    Cost: O(nm), n is the number of nodes, m is the number of arcs
     
     """
     """
@@ -550,7 +542,6 @@ def arcs_to_edges(arcs):
     """
     arcs_to_edges(arcs) transforms a set of Arc into Edge.
     arcs_to_edges: (setof Arc) -> (setof Edge)
-    Cost: O(m), m is the number of arcs.
     
     """
     return {arc_to_edge(arc) for arc in arcs}
@@ -559,7 +550,6 @@ def arcs_to_nodes(arcs):
     """
     arcs_to_nodes(arcs) transforms arcs to nodes.
     arcs_to_nodes: (setof Arc) -> (setof Node)
-    Cost: O()
 
     """
     nodes = set()
@@ -572,7 +562,6 @@ def dipath_to_nodes(dipath):
     """
     dipath_to_nodes(dipath) consumes a dipath and converts it to nodes.
     dipath_to_nodes: Dipath -> (listof Node)
-    Cost: O(n), n is the number of arcs in dipath.
 
     """
     nodes = []
@@ -690,8 +679,6 @@ def print_paths(paths):
     """
     print_paths(paths) prints the paths/dipaths pretty.
     print_paths: (listof Path/Dipath) -> None
-    Effects: prints paths
-    Cost: O(n), n is the number of paths in paths.
 
     """
     length = len(paths)
@@ -707,9 +694,6 @@ def all_disjoint_dipaths(arcs, i, j, limit = None, if_print = False):
     all_paths: (setof Arc) Vertex/Node Node Bool -> (listof Dipath)
 
     the output is not unique, which depends on the order of visited arcs.
-
-    Effects: might print paths
-    Cost: as well as the cost of finding an ij-dipath.
 
     """
     result = []
@@ -780,7 +764,6 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
     find all dipaths/dicycles from i to j.
     First find cut at i, then find vj-dipath for all arc iv in cut at i.
     Requires: result is a valid list. i, j not in avoid nodes.
-    Effects: will mutate the input result.
     Features: the ouput is unique, regardless the order of dipaths found. Can use for finding dicycles.
     """
 
