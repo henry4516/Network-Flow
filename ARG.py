@@ -202,6 +202,7 @@ class ARG:
             
 
 # sample uses
+# sample outputs in ARG_sample.txt
 if __name__ == "__main__":
     #Goemans, Mirrokni, Vetta atomic selfish routing instance
     GMV = {graph.Arc('s','w'),graph.Arc('s','v'),graph.Arc('s','t'),graph.Arc('v','w'),graph.Arc('v','t'),graph.Arc('w','t')}
@@ -215,22 +216,22 @@ if __name__ == "__main__":
     #print(list(it.permutations(range(len(paths)), 2)))
 
     def Csw(x):
-        return x+33
+        return 3*x + 13
     
     def Csv(x):
-        return 3 * x**2
+        return x**2 + x
     
     def Cst(x):
-        return 47 * x
+        return x**3 + 1
     
     def Cvw(x):
-        return 6 * x**2
+        return x**3 + 2*x + 1
     
     def Cvt(x):
-        return x**2 + 44
+        return x**2 + 3
     
     def Cwt(x):
-        return 13 * x
+        return x+1
 
     costs = {graph.Arc('s','w'):Csw,graph.Arc('s','v'):Csv,graph.Arc('s','t'):Cst,graph.Arc('v','w'):Cvw,graph.Arc('v','t'):Cvt,graph.Arc('w','t'):Cwt}
     game = ARG(2, (1,1), GMV, costs, 's', 't')
