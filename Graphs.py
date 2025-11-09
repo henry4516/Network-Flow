@@ -624,7 +624,7 @@ def find_dipath(arcs, i, j, visited_nodes = None, limit = None, length = 0, avoi
         visited_nodes = set()
     i_cut = tail_arcs(i, arcs)
     visited_nodes.add(i)
-    #visited_nodes.add(i)
+
     if process:
         print(f"finding {i},{j}-dipath:")
         print(f"length from starting: {length}")
@@ -637,16 +637,14 @@ def find_dipath(arcs, i, j, visited_nodes = None, limit = None, length = 0, avoi
         if process:
             print(f"on arc {arc}")
         ### check if to avoid
-        if not avoid_arcs is None:
-            if arc in avoid_arcs:
-                if process:
-                    print(f"avoid using arc {arc}")
-                continue
-        if not avoid_nodes is None:
-            if arc.head() in avoid_nodes:
-                if process:
-                    print(f"avoid using node {arc.head()}")
-                continue
+        if avoid_arcs is not None and arc in avoid_arcs:
+            if process:
+                print(f"avoid using arc {arc}")
+            continue
+        if avoid_nodes is not None and arc.head() in avoid_nodes:
+            if process:
+                print(f"avoid using node {arc.head()}")
+            continue
         ### journal ends. successful search
         if arc.head_or_tail(j) == 1:
             if process:
@@ -663,8 +661,9 @@ def find_dipath(arcs, i, j, visited_nodes = None, limit = None, length = 0, avoi
                 continue
             ### head is not visited. keep going
             rest = find_dipath(arcs, arc.head(), j, visited_nodes, limit, length + 1, avoid_arcs, avoid_nodes, process)
+            visited_nodes.remove(i)
             ### this arc uv's head v can approach j, where exists a "successful vj-dipath" in the graph
-            if not rest is False:
+            if rest is not False:
                 if process:
                     print(f"adding {arc} before {rest}")
                 ### add this arc into the path, as the previous arc precceding the "successful rest dipath"
