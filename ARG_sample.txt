@@ -1,0 +1,4043 @@
+vvv=====================================================vvv
+Atomic Selfish Routing Game with 2 players:
+------------------------------------
+>>>Game:
+[s->t, s->v, s->w, v->t, v->w, w->t]
+------------------------------------
+>>>Avaiable paths:
+Path 0: [s->t]
+Path 1: [s->v, v->t]
+Path 2: [s->w, w->t]
+Path 3: [s->v, v->w, w->t]
+------------------------------------
+>>>Source: s, Target: t
+------------------------------------
+>>>Traffics for each player:
+Player 0: 1
+Player 1: 1
+------------------------------------
+>>>Optimal social cost: 8
+>>>Optimal strategy profiles:
+(0, 1)
+(1, 0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Flows and costs of all strategy profiles:
+------------------------------------
+>>>Profile (0, 0) (Social cost: 18):
+Arc: (Flow, Cost)
+s->t: (2, 9)
+s->v: (0, 0)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 9
+Player 1: 9
+------------------------------------
+>>>Profile (0, 1) (Social cost: 8):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 2
+Player 1: 6
+------------------------------------
+>>>Profile (0, 2) (Social cost: 20):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (0, 0)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 2
+Player 1: 18
+------------------------------------
+>>>Profile (0, 3) (Social cost: 10):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 2
+Player 1: 8
+------------------------------------
+>>>Profile (1, 0) (Social cost: 8):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 6
+Player 1: 2
+------------------------------------
+>>>Profile (1, 1) (Social cost: 26):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (2, 7)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 13
+Player 1: 13
+------------------------------------
+>>>Profile (1, 2) (Social cost: 24):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (1, 16)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 6
+Player 1: 18
+------------------------------------
+>>>Profile (1, 3) (Social cost: 22):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 10
+Player 1: 12
+------------------------------------
+>>>Profile (2, 0) (Social cost: 20):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (0, 0)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 2
+------------------------------------
+>>>Profile (2, 1) (Social cost: 24):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (1, 16)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 6
+------------------------------------
+>>>Profile (2, 2) (Social cost: 44):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (0, 0)
+s->w: (2, 19)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 22
+Player 1: 22
+------------------------------------
+>>>Profile (2, 3) (Social cost: 28):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 19
+Player 1: 9
+------------------------------------
+>>>Profile (3, 0) (Social cost: 10):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 8
+Player 1: 2
+------------------------------------
+>>>Profile (3, 1) (Social cost: 22):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 12
+Player 1: 10
+------------------------------------
+>>>Profile (3, 2) (Social cost: 28):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 9
+Player 1: 19
+------------------------------------
+>>>Profile (3, 3) (Social cost: 44):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (2, 13)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 22
+Player 1: 22
+^^^=====================================================^^^
+vvv=====================================================vvv
+Atomic Selfish Routing Game with 2 players:
+------------------------------------
+>>>Game:
+[s->t, s->v, s->w, v->t, v->w, w->t]
+------------------------------------
+>>>Avaiable paths:
+Path 0: [s->t]
+Path 1: [s->v, v->t]
+Path 2: [s->w, w->t]
+Path 3: [s->v, v->w, w->t]
+------------------------------------
+>>>Source: s, Target: t
+------------------------------------
+>>>Traffics for each player:
+Player 0: 1
+Player 1: 2
+------------------------------------
+>>>Optimal social cost: 24
+>>>Optimal strategy profiles:
+(1, 0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Flows and costs of all strategy profiles:
+------------------------------------
+>>>Profile (0, 0) (Social cost: 84):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (0, 0)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 28
+Player 1: 28
+------------------------------------
+>>>Profile (0, 1) (Social cost: 28):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (2, 7)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 2
+Player 1: 13
+------------------------------------
+>>>Profile (0, 2) (Social cost: 46):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (0, 0)
+s->w: (2, 19)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 2
+Player 1: 22
+------------------------------------
+>>>Profile (0, 3) (Social cost: 46):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (2, 6)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (2, 13)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 2
+Player 1: 22
+------------------------------------
+>>>Profile (1, 0) (Social cost: 24):
+Arc: (Flow, Cost)
+s->t: (2, 9)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 6
+Player 1: 9
+------------------------------------
+>>>Profile (1, 1) (Social cost: 72):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 24
+Player 1: 24
+------------------------------------
+>>>Profile (1, 2) (Social cost: 50):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (2, 19)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 6
+Player 1: 22
+------------------------------------
+>>>Profile (1, 3) (Social cost: 72):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (2, 13)
+w->t: (2, 3)
+>>>Player costs:
+Player 0: 16
+Player 1: 28
+------------------------------------
+>>>Profile (2, 0) (Social cost: 36):
+Arc: (Flow, Cost)
+s->t: (2, 9)
+s->v: (0, 0)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 9
+------------------------------------
+>>>Profile (2, 1) (Social cost: 44):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (1, 16)
+v->t: (2, 7)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 13
+------------------------------------
+>>>Profile (2, 2) (Social cost: 78):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (0, 0)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 26
+Player 1: 26
+------------------------------------
+>>>Profile (2, 3) (Social cost: 66):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (2, 6)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (2, 13)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 20
+Player 1: 23
+------------------------------------
+>>>Profile (3, 0) (Social cost: 26):
+Arc: (Flow, Cost)
+s->t: (2, 9)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 8
+Player 1: 9
+------------------------------------
+>>>Profile (3, 1) (Social cost: 56):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (2, 7)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 19
+------------------------------------
+>>>Profile (3, 2) (Social cost: 56):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (2, 19)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 10
+Player 1: 23
+------------------------------------
+>>>Profile (3, 3) (Social cost: 150):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 50
+Player 1: 50
+^^^=====================================================^^^
+vvv=====================================================vvv
+Atomic Selfish Routing Game with 4 players:
+------------------------------------
+>>>Game:
+[s->t, s->v, s->w, v->t, v->w, w->t]
+------------------------------------
+>>>Avaiable paths:
+Path 0: [s->t]
+Path 1: [s->v, v->t]
+Path 2: [s->w, w->t]
+Path 3: [s->v, v->w, w->t]
+------------------------------------
+>>>Source: s, Target: t
+------------------------------------
+>>>Traffics for each player:
+Player 0: 1
+Player 1: 10
+Player 2: 9
+Player 3: 3
+------------------------------------
+>>>Optimal social cost: 1784
+>>>Optimal strategy profiles:
+(0, 2, 2, 1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Flows and costs of all strategy profiles:
+------------------------------------
+>>>Profile (0, 0, 0, 0) (Social cost: 279864):
+Arc: (Flow, Cost)
+s->t: (23, 12168)
+s->v: (0, 0)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 12168
+Player 1: 12168
+Player 2: 12168
+Player 3: 12168
+------------------------------------
+>>>Profile (0, 0, 0, 1) (Social cost: 160092):
+Arc: (Flow, Cost)
+s->t: (20, 8001)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 8001
+Player 1: 8001
+Player 2: 8001
+Player 3: 24
+------------------------------------
+>>>Profile (0, 0, 0, 2) (Social cost: 160098):
+Arc: (Flow, Cost)
+s->t: (20, 8001)
+s->v: (0, 0)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 8001
+Player 1: 8001
+Player 2: 8001
+Player 3: 26
+------------------------------------
+>>>Profile (0, 0, 0, 3) (Social cost: 160170):
+Arc: (Flow, Cost)
+s->t: (20, 8001)
+s->v: (3, 12)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 8001
+Player 1: 8001
+Player 2: 8001
+Player 3: 50
+------------------------------------
+>>>Profile (0, 0, 1, 0) (Social cost: 39996):
+Arc: (Flow, Cost)
+s->t: (14, 2745)
+s->v: (9, 90)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 2745
+Player 1: 2745
+Player 2: 174
+Player 3: 2745
+------------------------------------
+>>>Profile (0, 0, 1, 1) (Social cost: 18288):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (12, 156)
+s->w: (0, 13)
+v->t: (12, 147)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 303
+Player 3: 303
+------------------------------------
+>>>Profile (0, 0, 1, 2) (Social cost: 16296):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (9, 90)
+s->w: (3, 22)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 174
+Player 3: 26
+------------------------------------
+>>>Profile (0, 0, 1, 3) (Social cost: 17394):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (12, 156)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 240
+Player 3: 194
+------------------------------------
+>>>Profile (0, 0, 2, 0) (Social cost: 38880):
+Arc: (Flow, Cost)
+s->t: (14, 2745)
+s->v: (0, 0)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 2745
+Player 1: 2745
+Player 2: 50
+Player 3: 2745
+------------------------------------
+>>>Profile (0, 0, 2, 1) (Social cost: 15174):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (3, 12)
+s->w: (9, 40)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 50
+Player 3: 24
+------------------------------------
+>>>Profile (0, 0, 2, 2) (Social cost: 15396):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (0, 0)
+s->w: (12, 49)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 62
+Player 3: 62
+------------------------------------
+>>>Profile (0, 0, 2, 3) (Social cost: 15306):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (3, 12)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 53
+Player 3: 59
+------------------------------------
+>>>Profile (0, 0, 3, 0) (Social cost: 46062):
+Arc: (Flow, Cost)
+s->t: (14, 2745)
+s->v: (9, 90)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 2745
+Player 1: 2745
+Player 2: 848
+Player 3: 2745
+------------------------------------
+>>>Profile (0, 0, 3, 1) (Social cost: 23382):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (12, 156)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 914
+Player 3: 168
+------------------------------------
+>>>Profile (0, 0, 3, 2) (Social cost: 22416):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (9, 90)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 851
+Player 3: 35
+------------------------------------
+>>>Profile (0, 0, 3, 3) (Social cost: 37716):
+Arc: (Flow, Cost)
+s->t: (11, 1332)
+s->v: (12, 156)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (12, 1753)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 1332
+Player 1: 1332
+Player 2: 1922
+Player 3: 1922
+------------------------------------
+>>>Profile (0, 1, 0, 0) (Social cost: 30704):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 2198
+Player 1: 213
+Player 2: 2198
+Player 3: 2198
+------------------------------------
+>>>Profile (0, 1, 0, 1) (Social cost: 14612):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 1001
+Player 1: 354
+Player 2: 1001
+Player 3: 354
+------------------------------------
+>>>Profile (0, 1, 0, 2) (Social cost: 12218):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 1001
+Player 1: 213
+Player 2: 1001
+Player 3: 26
+------------------------------------
+>>>Profile (0, 1, 0, 3) (Social cost: 13520):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 1001
+Player 1: 285
+Player 2: 1001
+Player 3: 220
+------------------------------------
+>>>Profile (0, 1, 1, 0) (Social cost: 14396):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (19, 380)
+s->w: (0, 13)
+v->t: (19, 364)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 65
+Player 1: 744
+Player 2: 744
+Player 3: 65
+------------------------------------
+>>>Profile (0, 1, 1, 1) (Social cost: 21848):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (22, 487)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 2
+Player 1: 993
+Player 2: 993
+Player 3: 993
+------------------------------------
+>>>Profile (0, 1, 1, 2) (Social cost: 14216):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (19, 380)
+s->w: (3, 22)
+v->t: (19, 364)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 2
+Player 1: 744
+Player 2: 744
+Player 3: 26
+------------------------------------
+>>>Profile (0, 1, 1, 3) (Social cost: 18164):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (19, 364)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 2
+Player 1: 870
+Player 2: 870
+Player 3: 544
+------------------------------------
+>>>Profile (0, 1, 2, 0) (Social cost: 2840):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (10, 110)
+s->w: (9, 40)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 65
+Player 1: 213
+Player 2: 50
+Player 3: 65
+------------------------------------
+>>>Profile (0, 1, 2, 1) (Social cost: 5054):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (13, 182)
+s->w: (9, 40)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 2
+Player 1: 354
+Player 2: 50
+Player 3: 354
+------------------------------------
+>>>Profile (0, 1, 2, 2) (Social cost: 2876):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (10, 110)
+s->w: (12, 49)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 2
+Player 1: 213
+Player 2: 62
+Player 3: 62
+------------------------------------
+>>>Profile (0, 1, 2, 3) (Social cost: 4016):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (13, 182)
+s->w: (9, 40)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 2
+Player 1: 285
+Player 2: 53
+Player 3: 229
+------------------------------------
+>>>Profile (0, 1, 3, 0) (Social cost: 15332):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (19, 380)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 65
+Player 1: 483
+Player 2: 1138
+Player 3: 65
+------------------------------------
+>>>Profile (0, 1, 3, 1) (Social cost: 20192):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 2
+Player 1: 678
+Player 2: 1264
+Player 3: 678
+------------------------------------
+>>>Profile (0, 1, 3, 2) (Social cost: 15206):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (19, 380)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (9, 748)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 2
+Player 1: 483
+Player 2: 1141
+Player 3: 35
+------------------------------------
+>>>Profile (0, 1, 3, 3) (Social cost: 33356):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (12, 1753)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 2
+Player 1: 609
+Player 2: 2272
+Player 3: 2272
+------------------------------------
+>>>Profile (0, 2, 0, 0) (Social cost: 29114):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (0, 0)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 2198
+Player 1: 54
+Player 2: 2198
+Player 3: 2198
+------------------------------------
+>>>Profile (0, 2, 0, 1) (Social cost: 10622):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (3, 12)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1001
+Player 1: 54
+Player 2: 1001
+Player 3: 24
+------------------------------------
+>>>Profile (0, 2, 0, 2) (Social cost: 10868):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (0, 0)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1001
+Player 1: 66
+Player 2: 1001
+Player 3: 66
+------------------------------------
+>>>Profile (0, 2, 0, 3) (Social cost: 10760):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (3, 12)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1001
+Player 1: 57
+Player 2: 1001
+Player 3: 60
+------------------------------------
+>>>Profile (0, 2, 1, 0) (Social cost: 2366):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (9, 90)
+s->w: (10, 43)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 65
+Player 1: 54
+Player 2: 174
+Player 3: 65
+------------------------------------
+>>>Profile (0, 2, 1, 1) (Social cost: 4178):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (12, 156)
+s->w: (10, 43)
+v->t: (12, 147)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 2
+Player 1: 54
+Player 2: 303
+Player 3: 303
+------------------------------------
+>>>Profile (0, 2, 1, 2) (Social cost: 2426):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (9, 90)
+s->w: (13, 52)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2
+Player 1: 66
+Player 2: 174
+Player 3: 66
+------------------------------------
+>>>Profile (0, 2, 1, 3) (Social cost: 3344):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (12, 156)
+s->w: (10, 43)
+v->t: (9, 84)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2
+Player 1: 57
+Player 2: 240
+Player 3: 204
+------------------------------------
+>>>Profile (0, 2, 2, 0) (Social cost: 1970):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (0, 0)
+s->w: (19, 70)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 65
+Player 1: 90
+Player 2: 90
+Player 3: 65
+------------------------------------
+>>>Profile (0, 2, 2, 1) (Social cost: 1784):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (3, 12)
+s->w: (19, 70)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 2
+Player 1: 90
+Player 2: 90
+Player 3: 24
+------------------------------------
+>>>Profile (0, 2, 2, 2) (Social cost: 2246):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (0, 0)
+s->w: (22, 79)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 102
+Player 2: 102
+Player 3: 102
+------------------------------------
+>>>Profile (0, 2, 2, 3) (Social cost: 1976):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (3, 12)
+s->w: (19, 70)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 93
+Player 2: 93
+Player 3: 69
+------------------------------------
+>>>Profile (0, 2, 3, 0) (Social cost: 8612):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (9, 90)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 65
+Player 1: 63
+Player 2: 858
+Player 3: 65
+------------------------------------
+>>>Profile (0, 2, 3, 1) (Social cost: 9452):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (12, 156)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (9, 748)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 2
+Player 1: 63
+Player 2: 924
+Player 3: 168
+------------------------------------
+>>>Profile (0, 2, 3, 2) (Social cost: 8726):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (9, 90)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 75
+Player 2: 861
+Player 3: 75
+------------------------------------
+>>>Profile (0, 2, 3, 3) (Social cost: 23846):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (12, 156)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (12, 1753)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 66
+Player 2: 1932
+Player 3: 1932
+------------------------------------
+>>>Profile (0, 3, 0, 0) (Social cost: 39994):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 2198
+Player 1: 1142
+Player 2: 2198
+Player 3: 2198
+------------------------------------
+>>>Profile (0, 3, 0, 1) (Social cost: 22732):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1001
+Player 1: 1214
+Player 2: 1001
+Player 3: 194
+------------------------------------
+>>>Profile (0, 3, 0, 2) (Social cost: 21568):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1001
+Player 1: 1145
+Player 2: 1001
+Player 3: 36
+------------------------------------
+>>>Profile (0, 3, 0, 3) (Social cost: 41470):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1001
+Player 1: 2420
+Player 2: 1001
+Player 3: 2420
+------------------------------------
+>>>Profile (0, 3, 1, 0) (Social cost: 18556):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (19, 380)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 65
+Player 1: 1412
+Player 2: 464
+Player 3: 65
+------------------------------------
+>>>Profile (0, 3, 1, 1) (Social cost: 23218):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (12, 147)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 2
+Player 1: 1538
+Player 2: 653
+Player 3: 653
+------------------------------------
+>>>Profile (0, 3, 1, 2) (Social cost: 18436):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (19, 380)
+s->w: (3, 22)
+v->t: (9, 84)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2
+Player 1: 1415
+Player 2: 464
+Player 3: 36
+------------------------------------
+>>>Profile (0, 3, 1, 3) (Social cost: 40984):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2
+Player 1: 2744
+Player 2: 590
+Player 3: 2744
+------------------------------------
+>>>Profile (0, 3, 2, 0) (Social cost: 12310):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (10, 110)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 65
+Player 1: 1151
+Player 2: 60
+Player 3: 65
+------------------------------------
+>>>Profile (0, 3, 2, 1) (Social cost: 13354):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (13, 182)
+s->w: (9, 40)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 2
+Player 1: 1223
+Player 2: 60
+Player 3: 194
+------------------------------------
+>>>Profile (0, 3, 2, 2) (Social cost: 12406):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (10, 110)
+s->w: (12, 49)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 1154
+Player 2: 72
+Player 3: 72
+------------------------------------
+>>>Profile (0, 3, 2, 3) (Social cost: 32146):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (13, 182)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 2429
+Player 2: 63
+Player 3: 2429
+------------------------------------
+>>>Profile (0, 3, 3, 0) (Social cost: 138922):
+Arc: (Flow, Cost)
+s->t: (4, 65)
+s->v: (19, 380)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (19, 6898)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 65
+Player 1: 7298
+Player 2: 7298
+Player 3: 65
+------------------------------------
+>>>Profile (0, 3, 3, 1) (Social cost: 142612):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (19, 6898)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 2
+Player 1: 7424
+Player 2: 7424
+Player 3: 518
+------------------------------------
+>>>Profile (0, 3, 3, 2) (Social cost: 138856):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (19, 380)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (19, 6898)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 7301
+Player 2: 7301
+Player 3: 45
+------------------------------------
+>>>Profile (0, 3, 3, 3) (Social cost: 246886):
+Arc: (Flow, Cost)
+s->t: (1, 2)
+s->v: (22, 506)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (22, 10693)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 2
+Player 1: 11222
+Player 2: 11222
+Player 3: 11222
+------------------------------------
+>>>Profile (1, 0, 0, 0) (Social cost: 234284):
+Arc: (Flow, Cost)
+s->t: (22, 10649)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 6
+Player 1: 10649
+Player 2: 10649
+Player 3: 10649
+------------------------------------
+>>>Profile (1, 0, 0, 1) (Social cost: 130496):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (4, 20)
+s->w: (0, 13)
+v->t: (4, 19)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 39
+Player 1: 6860
+Player 2: 6860
+Player 3: 39
+------------------------------------
+>>>Profile (1, 0, 0, 2) (Social cost: 130424):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (1, 2)
+s->w: (3, 22)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 6
+Player 1: 6860
+Player 2: 6860
+Player 3: 26
+------------------------------------
+>>>Profile (1, 0, 0, 3) (Social cost: 130538):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (4, 20)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 24
+Player 1: 6860
+Player 2: 6860
+Player 3: 58
+------------------------------------
+>>>Profile (1, 0, 1, 0) (Social cost: 30704):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 213
+Player 1: 2198
+Player 2: 213
+Player 3: 2198
+------------------------------------
+>>>Profile (1, 0, 1, 1) (Social cost: 14612):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 354
+Player 1: 1001
+Player 2: 354
+Player 3: 354
+------------------------------------
+>>>Profile (1, 0, 1, 2) (Social cost: 12218):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 213
+Player 1: 1001
+Player 2: 213
+Player 3: 26
+------------------------------------
+>>>Profile (1, 0, 1, 3) (Social cost: 13520):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 285
+Player 1: 1001
+Player 2: 285
+Player 3: 220
+------------------------------------
+>>>Profile (1, 0, 2, 0) (Social cost: 29030):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (1, 2)
+s->w: (9, 40)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 6
+Player 1: 2198
+Player 2: 50
+Player 3: 2198
+------------------------------------
+>>>Profile (1, 0, 2, 1) (Social cost: 10616):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (4, 20)
+s->w: (9, 40)
+v->t: (4, 19)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 39
+Player 1: 1001
+Player 2: 50
+Player 3: 39
+------------------------------------
+>>>Profile (1, 0, 2, 2) (Social cost: 10760):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (1, 2)
+s->w: (12, 49)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 6
+Player 1: 1001
+Player 2: 62
+Player 3: 62
+------------------------------------
+>>>Profile (1, 0, 2, 3) (Social cost: 10712):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (4, 20)
+s->w: (9, 40)
+v->t: (1, 4)
+v->w: (3, 34)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 24
+Player 1: 1001
+Player 2: 53
+Player 3: 67
+------------------------------------
+>>>Profile (1, 0, 3, 0) (Social cost: 36500):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 114
+Player 1: 2198
+Player 2: 868
+Player 3: 2198
+------------------------------------
+>>>Profile (1, 0, 3, 1) (Social cost: 19274):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (4, 19)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 201
+Player 1: 1001
+Player 2: 940
+Player 3: 201
+------------------------------------
+>>>Profile (1, 0, 3, 2) (Social cost: 18068):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (1, 4)
+v->w: (9, 748)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 114
+Player 1: 1001
+Player 2: 871
+Player 3: 35
+------------------------------------
+>>>Profile (1, 0, 3, 3) (Social cost: 33572):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (12, 1753)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 186
+Player 1: 1001
+Player 2: 1948
+Player 3: 1948
+------------------------------------
+>>>Profile (1, 1, 0, 0) (Social cost: 23564):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (11, 132)
+s->w: (0, 13)
+v->t: (11, 124)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 256
+Player 1: 256
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (1, 1, 0, 1) (Social cost: 12296):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (14, 199)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 409
+Player 1: 409
+Player 2: 730
+Player 3: 409
+------------------------------------
+>>>Profile (1, 1, 0, 2) (Social cost: 9464):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (11, 132)
+s->w: (3, 22)
+v->t: (11, 124)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 256
+Player 1: 256
+Player 2: 730
+Player 3: 26
+------------------------------------
+>>>Profile (1, 1, 0, 3) (Social cost: 10988):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (11, 124)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 334
+Player 1: 334
+Player 2: 730
+Player 3: 248
+------------------------------------
+>>>Profile (1, 1, 1, 0) (Social cost: 16544):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (20, 403)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 823
+Player 1: 823
+Player 2: 823
+Player 3: 28
+------------------------------------
+>>>Profile (1, 1, 1, 1) (Social cost: 24932):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (23, 532)
+v->w: (0, 1)
+w->t: (0, 1)
+>>>Player costs:
+Player 0: 1084
+Player 1: 1084
+Player 2: 1084
+Player 3: 1084
+------------------------------------
+>>>Profile (1, 1, 1, 2) (Social cost: 16538):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (20, 403)
+v->w: (0, 1)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 823
+Player 1: 823
+Player 2: 823
+Player 3: 26
+------------------------------------
+>>>Profile (1, 1, 1, 3) (Social cost: 20870):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (20, 403)
+v->w: (3, 34)
+w->t: (3, 4)
+>>>Player costs:
+Player 0: 955
+Player 1: 955
+Player 2: 955
+Player 3: 590
+------------------------------------
+>>>Profile (1, 1, 2, 0) (Social cost: 3350):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (11, 132)
+s->w: (9, 40)
+v->t: (11, 124)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 256
+Player 1: 256
+Player 2: 50
+Player 3: 28
+------------------------------------
+>>>Profile (1, 1, 2, 1) (Social cost: 6176):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (14, 199)
+v->w: (0, 1)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 409
+Player 1: 409
+Player 2: 50
+Player 3: 409
+------------------------------------
+>>>Profile (1, 1, 2, 2) (Social cost: 3560):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (11, 132)
+s->w: (12, 49)
+v->t: (11, 124)
+v->w: (0, 1)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 256
+Player 1: 256
+Player 2: 62
+Player 3: 62
+------------------------------------
+>>>Profile (1, 1, 2, 3) (Social cost: 4922):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (11, 124)
+v->w: (3, 34)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 334
+Player 1: 334
+Player 2: 53
+Player 3: 257
+------------------------------------
+>>>Profile (1, 1, 3, 0) (Social cost: 16670):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (11, 124)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 544
+Player 1: 544
+Player 2: 1178
+Player 3: 28
+------------------------------------
+>>>Profile (1, 1, 3, 1) (Social cost: 22304):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (14, 199)
+v->w: (9, 748)
+w->t: (9, 10)
+>>>Player costs:
+Player 0: 751
+Player 1: 751
+Player 2: 1310
+Player 3: 751
+------------------------------------
+>>>Profile (1, 1, 3, 2) (Social cost: 16718):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (11, 124)
+v->w: (9, 748)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 544
+Player 1: 544
+Player 2: 1181
+Player 3: 35
+------------------------------------
+>>>Profile (1, 1, 3, 3) (Social cost: 35252):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (11, 124)
+v->w: (12, 1753)
+w->t: (12, 13)
+>>>Player costs:
+Player 0: 676
+Player 1: 676
+Player 2: 2318
+Player 3: 2318
+------------------------------------
+>>>Profile (1, 2, 0, 0) (Social cost: 21294):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (1, 2)
+s->w: (10, 43)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 6
+Player 1: 54
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (1, 2, 0, 1) (Social cost: 7266):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (4, 20)
+s->w: (10, 43)
+v->t: (4, 19)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 39
+Player 1: 54
+Player 2: 730
+Player 3: 39
+------------------------------------
+>>>Profile (1, 2, 0, 2) (Social cost: 7434):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (1, 2)
+s->w: (13, 52)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 6
+Player 1: 66
+Player 2: 730
+Player 3: 66
+------------------------------------
+>>>Profile (1, 2, 0, 3) (Social cost: 7368):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (4, 20)
+s->w: (10, 43)
+v->t: (1, 4)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 24
+Player 1: 57
+Player 2: 730
+Player 3: 68
+------------------------------------
+>>>Profile (1, 2, 1, 0) (Social cost: 2754):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 213
+Player 1: 54
+Player 2: 213
+Player 3: 28
+------------------------------------
+>>>Profile (1, 2, 1, 1) (Social cost: 5142):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 354
+Player 1: 54
+Player 2: 354
+Player 3: 354
+------------------------------------
+>>>Profile (1, 2, 1, 2) (Social cost: 2988):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 213
+Player 1: 66
+Player 2: 213
+Player 3: 66
+------------------------------------
+>>>Profile (1, 2, 1, 3) (Social cost: 4110):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 285
+Player 1: 57
+Player 2: 285
+Player 3: 230
+------------------------------------
+>>>Profile (1, 2, 2, 0) (Social cost: 1800):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (1, 2)
+s->w: (19, 70)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 6
+Player 1: 90
+Player 2: 90
+Player 3: 28
+------------------------------------
+>>>Profile (1, 2, 2, 1) (Social cost: 1866):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (4, 20)
+s->w: (19, 70)
+v->t: (4, 19)
+v->w: (0, 1)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 39
+Player 1: 90
+Player 2: 90
+Player 3: 39
+------------------------------------
+>>>Profile (1, 2, 2, 2) (Social cost: 2250):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (22, 79)
+v->t: (1, 4)
+v->w: (0, 1)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 6
+Player 1: 102
+Player 2: 102
+Player 3: 102
+------------------------------------
+>>>Profile (1, 2, 2, 3) (Social cost: 2022):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (4, 20)
+s->w: (19, 70)
+v->t: (1, 4)
+v->w: (3, 34)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 24
+Player 1: 93
+Player 2: 93
+Player 3: 77
+------------------------------------
+>>>Profile (1, 2, 3, 0) (Social cost: 8730):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (1, 4)
+v->w: (9, 748)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 114
+Player 1: 63
+Player 2: 878
+Player 3: 28
+------------------------------------
+>>>Profile (1, 2, 3, 1) (Social cost: 9984):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (4, 19)
+v->w: (9, 748)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 201
+Player 1: 63
+Player 2: 950
+Player 3: 201
+------------------------------------
+>>>Profile (1, 2, 3, 2) (Social cost: 9018):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (1, 4)
+v->w: (9, 748)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 114
+Player 1: 75
+Player 2: 881
+Player 3: 75
+------------------------------------
+>>>Profile (1, 2, 3, 3) (Social cost: 24342):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (1, 4)
+v->w: (12, 1753)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 186
+Player 1: 66
+Player 2: 1958
+Player 3: 1958
+------------------------------------
+>>>Profile (1, 3, 0, 0) (Social cost: 32524):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (11, 132)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 136
+Player 1: 1164
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (1, 3, 0, 1) (Social cost: 19906):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (4, 19)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 229
+Player 1: 1242
+Player 2: 730
+Player 3: 229
+------------------------------------
+>>>Profile (1, 3, 0, 2) (Social cost: 18484):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (11, 132)
+s->w: (3, 22)
+v->t: (1, 4)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 136
+Player 1: 1167
+Player 2: 730
+Player 3: 36
+------------------------------------
+>>>Profile (1, 3, 0, 3) (Social cost: 38608):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 214
+Player 1: 2448
+Player 2: 730
+Player 3: 2448
+------------------------------------
+>>>Profile (1, 3, 1, 0) (Social cost: 19834):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 523
+Player 1: 1452
+Player 2: 523
+Player 3: 28
+------------------------------------
+>>>Profile (1, 3, 1, 1) (Social cost: 25252):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 724
+Player 1: 1584
+Player 2: 724
+Player 3: 724
+------------------------------------
+>>>Profile (1, 3, 1, 2) (Social cost: 19888):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 523
+Player 1: 1455
+Player 2: 523
+Player 3: 36
+------------------------------------
+>>>Profile (1, 3, 1, 3) (Social cost: 42820):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 655
+Player 1: 2790
+Player 2: 655
+Player 3: 2790
+------------------------------------
+>>>Profile (1, 3, 2, 0) (Social cost: 12490):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (11, 132)
+s->w: (9, 40)
+v->t: (1, 4)
+v->w: (10, 1021)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 136
+Player 1: 1173
+Player 2: 60
+Player 3: 28
+------------------------------------
+>>>Profile (1, 3, 2, 1) (Social cost: 13966):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (4, 19)
+v->w: (10, 1021)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 229
+Player 1: 1251
+Player 2: 60
+Player 3: 229
+------------------------------------
+>>>Profile (1, 3, 2, 2) (Social cost: 12760):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (11, 132)
+s->w: (12, 49)
+v->t: (1, 4)
+v->w: (10, 1021)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 136
+Player 1: 1176
+Player 2: 72
+Player 3: 72
+------------------------------------
+>>>Profile (1, 3, 2, 3) (Social cost: 32722):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (1, 4)
+v->w: (13, 2224)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 214
+Player 1: 2457
+Player 2: 63
+Player 3: 2457
+------------------------------------
+>>>Profile (1, 3, 3, 0) (Social cost: 139930):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (19, 6898)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 424
+Player 1: 7338
+Player 2: 7338
+Player 3: 28
+------------------------------------
+>>>Profile (1, 3, 3, 1) (Social cost: 144214):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (4, 19)
+v->w: (19, 6898)
+w->t: (19, 20)
+>>>Player costs:
+Player 0: 571
+Player 1: 7470
+Player 2: 7470
+Player 3: 571
+------------------------------------
+>>>Profile (1, 3, 3, 2) (Social cost: 140038):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (1, 4)
+v->w: (19, 6898)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 424
+Player 1: 7341
+Player 2: 7341
+Player 3: 45
+------------------------------------
+>>>Profile (1, 3, 3, 3) (Social cost: 248452):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (1, 4)
+v->w: (22, 10693)
+w->t: (22, 23)
+>>>Player costs:
+Player 0: 556
+Player 1: 11268
+Player 2: 11268
+Player 3: 11268
+------------------------------------
+>>>Profile (2, 0, 0, 0) (Social cost: 234296):
+Arc: (Flow, Cost)
+s->t: (22, 10649)
+s->v: (0, 0)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 10649
+Player 2: 10649
+Player 3: 10649
+------------------------------------
+>>>Profile (2, 0, 0, 1) (Social cost: 130430):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (3, 12)
+s->w: (1, 16)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 6860
+Player 2: 6860
+Player 3: 24
+------------------------------------
+>>>Profile (2, 0, 0, 2) (Social cost: 130460):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (0, 0)
+s->w: (4, 25)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 30
+Player 1: 6860
+Player 2: 6860
+Player 3: 30
+------------------------------------
+>>>Profile (2, 0, 0, 3) (Social cost: 130514):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (3, 12)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 21
+Player 1: 6860
+Player 2: 6860
+Player 3: 51
+------------------------------------
+>>>Profile (2, 0, 1, 0) (Social cost: 30158):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (9, 90)
+s->w: (1, 16)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 2198
+Player 2: 174
+Player 3: 2198
+------------------------------------
+>>>Profile (2, 0, 1, 1) (Social cost: 13664):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (12, 156)
+s->w: (1, 16)
+v->t: (12, 147)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 1001
+Player 2: 303
+Player 3: 303
+------------------------------------
+>>>Profile (2, 0, 1, 2) (Social cost: 11696):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (9, 90)
+s->w: (4, 25)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 30
+Player 1: 1001
+Player 2: 174
+Player 3: 30
+------------------------------------
+>>>Profile (2, 0, 1, 3) (Social cost: 12776):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (12, 156)
+s->w: (1, 16)
+v->t: (9, 84)
+v->w: (3, 34)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 21
+Player 1: 1001
+Player 2: 240
+Player 3: 195
+------------------------------------
+>>>Profile (2, 0, 2, 0) (Social cost: 29114):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (0, 0)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 54
+Player 1: 2198
+Player 2: 54
+Player 3: 2198
+------------------------------------
+>>>Profile (2, 0, 2, 1) (Social cost: 10622):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (3, 12)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 54
+Player 1: 1001
+Player 2: 54
+Player 3: 24
+------------------------------------
+>>>Profile (2, 0, 2, 2) (Social cost: 10868):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (0, 0)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 66
+Player 1: 1001
+Player 2: 66
+Player 3: 66
+------------------------------------
+>>>Profile (2, 0, 2, 3) (Social cost: 10760):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (3, 12)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 57
+Player 1: 1001
+Player 2: 57
+Player 3: 60
+------------------------------------
+>>>Profile (2, 0, 3, 0) (Social cost: 36242):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (9, 90)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 27
+Player 1: 2198
+Player 2: 849
+Player 3: 2198
+------------------------------------
+>>>Profile (2, 0, 3, 1) (Social cost: 18776):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (12, 156)
+s->w: (1, 16)
+v->t: (3, 12)
+v->w: (9, 748)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 27
+Player 1: 1001
+Player 2: 915
+Player 3: 168
+------------------------------------
+>>>Profile (2, 0, 3, 2) (Social cost: 17834):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (9, 90)
+s->w: (4, 25)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 39
+Player 1: 1001
+Player 2: 852
+Player 3: 39
+------------------------------------
+>>>Profile (2, 0, 3, 3) (Social cost: 33116):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (12, 156)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (12, 1753)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 30
+Player 1: 1001
+Player 2: 1923
+Player 3: 1923
+------------------------------------
+>>>Profile (2, 1, 0, 0) (Social cost: 22896):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (10, 110)
+s->w: (1, 16)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 213
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (2, 1, 0, 1) (Social cost: 11190):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (13, 182)
+s->w: (1, 16)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 354
+Player 2: 730
+Player 3: 354
+------------------------------------
+>>>Profile (2, 1, 0, 2) (Social cost: 8820):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (10, 110)
+s->w: (4, 25)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 30
+Player 1: 213
+Player 2: 730
+Player 3: 30
+------------------------------------
+>>>Profile (2, 1, 0, 3) (Social cost: 10104):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (13, 182)
+s->w: (1, 16)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 21
+Player 1: 285
+Player 2: 730
+Player 3: 221
+------------------------------------
+>>>Profile (2, 1, 1, 0) (Social cost: 14238):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (19, 380)
+s->w: (1, 16)
+v->t: (19, 364)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 744
+Player 2: 744
+Player 3: 28
+------------------------------------
+>>>Profile (2, 1, 1, 1) (Social cost: 21864):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (22, 487)
+v->w: (0, 1)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 18
+Player 1: 993
+Player 2: 993
+Player 3: 993
+------------------------------------
+>>>Profile (2, 1, 1, 2) (Social cost: 14256):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (19, 380)
+s->w: (4, 25)
+v->t: (19, 364)
+v->w: (0, 1)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 30
+Player 1: 744
+Player 2: 744
+Player 3: 30
+------------------------------------
+>>>Profile (2, 1, 1, 3) (Social cost: 18186):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (19, 364)
+v->w: (3, 34)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 21
+Player 1: 870
+Player 2: 870
+Player 3: 545
+------------------------------------
+>>>Profile (2, 1, 2, 0) (Social cost: 2754):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 54
+Player 1: 213
+Player 2: 54
+Player 3: 28
+------------------------------------
+>>>Profile (2, 1, 2, 1) (Social cost: 5142):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (13, 172)
+v->w: (0, 1)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 54
+Player 1: 354
+Player 2: 54
+Player 3: 354
+------------------------------------
+>>>Profile (2, 1, 2, 2) (Social cost: 2988):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (10, 103)
+v->w: (0, 1)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 66
+Player 1: 213
+Player 2: 66
+Player 3: 66
+------------------------------------
+>>>Profile (2, 1, 2, 3) (Social cost: 4110):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (10, 103)
+v->w: (3, 34)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 57
+Player 1: 285
+Player 2: 57
+Player 3: 230
+------------------------------------
+>>>Profile (2, 1, 3, 0) (Social cost: 15192):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (19, 380)
+s->w: (1, 16)
+v->t: (10, 103)
+v->w: (9, 748)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 27
+Player 1: 483
+Player 2: 1139
+Player 3: 28
+------------------------------------
+>>>Profile (2, 1, 3, 1) (Social cost: 20226):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (13, 172)
+v->w: (9, 748)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 27
+Player 1: 678
+Player 2: 1265
+Player 3: 678
+------------------------------------
+>>>Profile (2, 1, 3, 2) (Social cost: 15264):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (19, 380)
+s->w: (4, 25)
+v->t: (10, 103)
+v->w: (9, 748)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 39
+Player 1: 483
+Player 2: 1142
+Player 3: 39
+------------------------------------
+>>>Profile (2, 1, 3, 3) (Social cost: 33396):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (10, 103)
+v->w: (12, 1753)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 30
+Player 1: 609
+Player 2: 2273
+Player 3: 2273
+------------------------------------
+>>>Profile (2, 2, 0, 0) (Social cost: 21386):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (0, 0)
+s->w: (11, 46)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 58
+Player 1: 58
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (2, 2, 0, 1) (Social cost: 7280):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (3, 12)
+s->w: (11, 46)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 58
+Player 1: 58
+Player 2: 730
+Player 3: 24
+------------------------------------
+>>>Profile (2, 2, 0, 2) (Social cost: 7550):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (0, 0)
+s->w: (14, 55)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 70
+Player 1: 70
+Player 2: 730
+Player 3: 70
+------------------------------------
+>>>Profile (2, 2, 0, 3) (Social cost: 7424):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (3, 12)
+s->w: (11, 46)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 61
+Player 1: 61
+Player 2: 730
+Player 3: 61
+------------------------------------
+>>>Profile (2, 2, 1, 0) (Social cost: 2288):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (9, 90)
+s->w: (11, 46)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 58
+Player 1: 58
+Player 2: 174
+Player 3: 28
+------------------------------------
+>>>Profile (2, 2, 1, 1) (Social cost: 4274):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (12, 156)
+s->w: (11, 46)
+v->t: (12, 147)
+v->w: (0, 1)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 58
+Player 1: 58
+Player 2: 303
+Player 3: 303
+------------------------------------
+>>>Profile (2, 2, 1, 2) (Social cost: 2546):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (9, 90)
+s->w: (14, 55)
+v->t: (9, 84)
+v->w: (0, 1)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 70
+Player 1: 70
+Player 2: 174
+Player 3: 70
+------------------------------------
+>>>Profile (2, 2, 1, 3) (Social cost: 3446):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (12, 156)
+s->w: (11, 46)
+v->t: (9, 84)
+v->w: (3, 34)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 61
+Player 1: 61
+Player 2: 240
+Player 3: 205
+------------------------------------
+>>>Profile (2, 2, 2, 0) (Social cost: 1964):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (0, 0)
+s->w: (20, 73)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 94
+Player 1: 94
+Player 2: 94
+Player 3: 28
+------------------------------------
+>>>Profile (2, 2, 2, 1) (Social cost: 1952):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (20, 73)
+v->t: (3, 12)
+v->w: (0, 1)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 94
+Player 1: 94
+Player 2: 94
+Player 3: 24
+------------------------------------
+>>>Profile (2, 2, 2, 2) (Social cost: 2438):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (0, 0)
+s->w: (23, 82)
+v->t: (0, 3)
+v->w: (0, 1)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 106
+Player 1: 106
+Player 2: 106
+Player 3: 106
+------------------------------------
+>>>Profile (2, 2, 2, 3) (Social cost: 2150):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (3, 12)
+s->w: (20, 73)
+v->t: (0, 3)
+v->w: (3, 34)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 97
+Player 1: 97
+Player 2: 97
+Player 3: 70
+------------------------------------
+>>>Profile (2, 2, 3, 0) (Social cost: 8552):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (9, 90)
+s->w: (11, 46)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 67
+Player 1: 67
+Player 2: 859
+Player 3: 28
+------------------------------------
+>>>Profile (2, 2, 3, 1) (Social cost: 9566):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (12, 156)
+s->w: (11, 46)
+v->t: (3, 12)
+v->w: (9, 748)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 67
+Player 1: 67
+Player 2: 925
+Player 3: 168
+------------------------------------
+>>>Profile (2, 2, 3, 2) (Social cost: 8864):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (9, 90)
+s->w: (14, 55)
+v->t: (0, 3)
+v->w: (9, 748)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 79
+Player 1: 79
+Player 2: 862
+Player 3: 79
+------------------------------------
+>>>Profile (2, 2, 3, 3) (Social cost: 23966):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (12, 156)
+s->w: (11, 46)
+v->t: (0, 3)
+v->w: (12, 1753)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 70
+Player 1: 70
+Player 2: 1933
+Player 3: 1933
+------------------------------------
+>>>Profile (2, 3, 0, 0) (Social cost: 32206):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (10, 110)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 28
+Player 1: 1143
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (2, 3, 0, 1) (Social cost: 19330):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (13, 182)
+s->w: (1, 16)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 28
+Player 1: 1215
+Player 2: 730
+Player 3: 194
+------------------------------------
+>>>Profile (2, 3, 0, 2) (Social cost: 18190):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (10, 110)
+s->w: (4, 25)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 40
+Player 1: 1146
+Player 2: 730
+Player 3: 40
+------------------------------------
+>>>Profile (2, 3, 0, 3) (Social cost: 38074):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (13, 182)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 31
+Player 1: 2421
+Player 2: 730
+Player 3: 2421
+------------------------------------
+>>>Profile (2, 3, 1, 0) (Social cost: 18418):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (19, 380)
+s->w: (1, 16)
+v->t: (9, 84)
+v->w: (10, 1021)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 28
+Player 1: 1413
+Player 2: 464
+Player 3: 28
+------------------------------------
+>>>Profile (2, 3, 1, 1) (Social cost: 23254):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (12, 147)
+v->w: (10, 1021)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 28
+Player 1: 1539
+Player 2: 653
+Player 3: 653
+------------------------------------
+>>>Profile (2, 3, 1, 2) (Social cost: 18496):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (19, 380)
+s->w: (4, 25)
+v->t: (9, 84)
+v->w: (10, 1021)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 40
+Player 1: 1416
+Player 2: 464
+Player 3: 40
+------------------------------------
+>>>Profile (2, 3, 1, 3) (Social cost: 41026):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (9, 84)
+v->w: (13, 2224)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 31
+Player 1: 2745
+Player 2: 590
+Player 3: 2745
+------------------------------------
+>>>Profile (2, 3, 2, 0) (Social cost: 12244):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 64
+Player 1: 1152
+Player 2: 64
+Player 3: 28
+------------------------------------
+>>>Profile (2, 3, 2, 1) (Social cost: 13462):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 64
+Player 1: 1224
+Player 2: 64
+Player 3: 194
+------------------------------------
+>>>Profile (2, 3, 2, 2) (Social cost: 12538):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 76
+Player 1: 1155
+Player 2: 76
+Player 3: 76
+------------------------------------
+>>>Profile (2, 3, 2, 3) (Social cost: 32260):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 67
+Player 1: 2430
+Player 2: 67
+Player 3: 2430
+------------------------------------
+>>>Profile (2, 3, 3, 0) (Social cost: 138802):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (19, 380)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (19, 6898)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 37
+Player 1: 7299
+Player 2: 7299
+Player 3: 28
+------------------------------------
+>>>Profile (2, 3, 3, 1) (Social cost: 142666):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (3, 12)
+v->w: (19, 6898)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 37
+Player 1: 7425
+Player 2: 7425
+Player 3: 518
+------------------------------------
+>>>Profile (2, 3, 3, 2) (Social cost: 138934):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (19, 380)
+s->w: (4, 25)
+v->t: (0, 3)
+v->w: (19, 6898)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 49
+Player 1: 7302
+Player 2: 7302
+Player 3: 49
+------------------------------------
+>>>Profile (2, 3, 3, 3) (Social cost: 246946):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (22, 506)
+s->w: (1, 16)
+v->t: (0, 3)
+v->w: (22, 10693)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 40
+Player 1: 11223
+Player 2: 11223
+Player 3: 11223
+------------------------------------
+>>>Profile (3, 0, 0, 0) (Social cost: 234286):
+Arc: (Flow, Cost)
+s->t: (22, 10649)
+s->v: (1, 2)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 8
+Player 1: 10649
+Player 2: 10649
+Player 3: 10649
+------------------------------------
+>>>Profile (3, 0, 0, 1) (Social cost: 130462):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (4, 20)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 26
+Player 1: 6860
+Player 2: 6860
+Player 3: 32
+------------------------------------
+>>>Profile (3, 0, 0, 2) (Social cost: 130432):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (1, 2)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 11
+Player 1: 6860
+Player 2: 6860
+Player 3: 27
+------------------------------------
+>>>Profile (3, 0, 0, 3) (Social cost: 130732):
+Arc: (Flow, Cost)
+s->t: (19, 6860)
+s->v: (4, 20)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (4, 73)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 98
+Player 1: 6860
+Player 2: 6860
+Player 3: 98
+------------------------------------
+>>>Profile (3, 0, 1, 0) (Social cost: 30436):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 116
+Player 1: 2198
+Player 2: 194
+Player 3: 2198
+------------------------------------
+>>>Profile (3, 0, 1, 1) (Social cost: 14146):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (12, 147)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 188
+Player 1: 1001
+Player 2: 329
+Player 3: 329
+------------------------------------
+>>>Profile (3, 0, 1, 2) (Social cost: 11956):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (9, 84)
+v->w: (1, 4)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 119
+Player 1: 1001
+Player 2: 194
+Player 3: 27
+------------------------------------
+>>>Profile (3, 0, 1, 3) (Social cost: 13444):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (4, 73)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 260
+Player 1: 1001
+Player 2: 266
+Player 3: 260
+------------------------------------
+>>>Profile (3, 0, 2, 0) (Social cost: 29050):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (1, 2)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 17
+Player 1: 2198
+Player 2: 51
+Player 3: 2198
+------------------------------------
+>>>Profile (3, 0, 2, 1) (Social cost: 10600):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (4, 20)
+s->w: (9, 40)
+v->t: (3, 12)
+v->w: (1, 4)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 35
+Player 1: 1001
+Player 2: 51
+Player 3: 32
+------------------------------------
+>>>Profile (3, 0, 2, 2) (Social cost: 10786):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (1, 2)
+s->w: (12, 49)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 20
+Player 1: 1001
+Player 2: 63
+Player 3: 63
+------------------------------------
+>>>Profile (3, 0, 2, 3) (Social cost: 10924):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (4, 20)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (4, 73)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 107
+Player 1: 1001
+Player 2: 54
+Player 3: 107
+------------------------------------
+>>>Profile (3, 0, 3, 0) (Social cost: 39994):
+Arc: (Flow, Cost)
+s->t: (13, 2198)
+s->v: (10, 110)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1142
+Player 1: 2198
+Player 2: 1142
+Player 3: 2198
+------------------------------------
+>>>Profile (3, 0, 3, 1) (Social cost: 22732):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1214
+Player 1: 1001
+Player 2: 1214
+Player 3: 194
+------------------------------------
+>>>Profile (3, 0, 3, 2) (Social cost: 21568):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (10, 110)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1145
+Player 1: 1001
+Player 2: 1145
+Player 3: 36
+------------------------------------
+>>>Profile (3, 0, 3, 3) (Social cost: 41470):
+Arc: (Flow, Cost)
+s->t: (10, 1001)
+s->v: (13, 182)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2420
+Player 1: 1001
+Player 2: 2420
+Player 3: 2420
+------------------------------------
+>>>Profile (3, 1, 0, 0) (Social cost: 23236):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (11, 132)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 138
+Player 1: 235
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (3, 1, 0, 1) (Social cost: 11752):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 216
+Player 1: 382
+Player 2: 730
+Player 3: 382
+------------------------------------
+>>>Profile (3, 1, 0, 2) (Social cost: 9142):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (11, 132)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (1, 4)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 141
+Player 1: 235
+Player 2: 730
+Player 3: 27
+------------------------------------
+>>>Profile (3, 1, 0, 3) (Social cost: 10852):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (4, 73)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 288
+Player 1: 313
+Player 2: 730
+Player 3: 288
+------------------------------------
+>>>Profile (3, 1, 1, 0) (Social cost: 15406):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (19, 364)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 426
+Player 1: 784
+Player 2: 784
+Player 3: 28
+------------------------------------
+>>>Profile (3, 1, 1, 1) (Social cost: 23416):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (22, 487)
+v->w: (1, 4)
+w->t: (1, 2)
+>>>Player costs:
+Player 0: 558
+Player 1: 1039
+Player 2: 1039
+Player 3: 1039
+------------------------------------
+>>>Profile (3, 1, 1, 2) (Social cost: 15406):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (19, 364)
+v->w: (1, 4)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 429
+Player 1: 784
+Player 2: 784
+Player 3: 27
+------------------------------------
+>>>Profile (3, 1, 1, 3) (Social cost: 19924):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (19, 364)
+v->w: (4, 73)
+w->t: (4, 5)
+>>>Player costs:
+Player 0: 630
+Player 1: 916
+Player 2: 916
+Player 3: 630
+------------------------------------
+>>>Profile (3, 1, 2, 0) (Social cost: 3040):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (11, 132)
+s->w: (9, 40)
+v->t: (10, 103)
+v->w: (1, 4)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 147
+Player 1: 235
+Player 2: 51
+Player 3: 28
+------------------------------------
+>>>Profile (3, 1, 2, 1) (Social cost: 5650):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (13, 172)
+v->w: (1, 4)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 225
+Player 1: 382
+Player 2: 51
+Player 3: 382
+------------------------------------
+>>>Profile (3, 1, 2, 2) (Social cost: 3256):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (11, 132)
+s->w: (12, 49)
+v->t: (10, 103)
+v->w: (1, 4)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 150
+Player 1: 235
+Player 2: 63
+Player 3: 63
+------------------------------------
+>>>Profile (3, 1, 2, 3) (Social cost: 4804):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (10, 103)
+v->w: (4, 73)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 297
+Player 1: 313
+Player 2: 54
+Player 3: 297
+------------------------------------
+>>>Profile (3, 1, 3, 0) (Social cost: 19834):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1452
+Player 1: 523
+Player 2: 1452
+Player 3: 28
+------------------------------------
+>>>Profile (3, 1, 3, 1) (Social cost: 25252):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (13, 172)
+v->w: (10, 1021)
+w->t: (10, 11)
+>>>Player costs:
+Player 0: 1584
+Player 1: 724
+Player 2: 1584
+Player 3: 724
+------------------------------------
+>>>Profile (3, 1, 3, 2) (Social cost: 19888):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (10, 103)
+v->w: (10, 1021)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 1455
+Player 1: 523
+Player 2: 1455
+Player 3: 36
+------------------------------------
+>>>Profile (3, 1, 3, 3) (Social cost: 42820):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (10, 103)
+v->w: (13, 2224)
+w->t: (13, 14)
+>>>Player costs:
+Player 0: 2790
+Player 1: 655
+Player 2: 2790
+Player 3: 2790
+------------------------------------
+>>>Profile (3, 2, 0, 0) (Social cost: 21316):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (1, 2)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 18
+Player 1: 55
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (3, 2, 0, 1) (Social cost: 7252):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (4, 20)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (1, 4)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 36
+Player 1: 55
+Player 2: 730
+Player 3: 32
+------------------------------------
+>>>Profile (3, 2, 0, 2) (Social cost: 7462):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (1, 2)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 21
+Player 1: 67
+Player 2: 730
+Player 3: 67
+------------------------------------
+>>>Profile (3, 2, 0, 3) (Social cost: 7582):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (4, 20)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (4, 73)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 108
+Player 1: 58
+Player 2: 730
+Player 3: 108
+------------------------------------
+>>>Profile (3, 2, 1, 0) (Social cost: 2506):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (9, 84)
+v->w: (1, 4)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 126
+Player 1: 55
+Player 2: 194
+Player 3: 28
+------------------------------------
+>>>Profile (3, 2, 1, 1) (Social cost: 4696):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (12, 147)
+v->w: (1, 4)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 198
+Player 1: 55
+Player 2: 329
+Player 3: 329
+------------------------------------
+>>>Profile (3, 2, 1, 2) (Social cost: 2746):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (9, 84)
+v->w: (1, 4)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 129
+Player 1: 67
+Player 2: 194
+Player 3: 67
+------------------------------------
+>>>Profile (3, 2, 1, 3) (Social cost: 4054):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (9, 84)
+v->w: (4, 73)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 270
+Player 1: 58
+Player 2: 266
+Player 3: 270
+------------------------------------
+>>>Profile (3, 2, 2, 0) (Social cost: 1840):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (1, 2)
+s->w: (19, 70)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 27
+Player 1: 91
+Player 2: 91
+Player 3: 28
+------------------------------------
+>>>Profile (3, 2, 2, 1) (Social cost: 1870):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (4, 20)
+s->w: (19, 70)
+v->t: (3, 12)
+v->w: (1, 4)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 45
+Player 1: 91
+Player 2: 91
+Player 3: 32
+------------------------------------
+>>>Profile (3, 2, 2, 2) (Social cost: 2296):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (1, 2)
+s->w: (22, 79)
+v->t: (0, 3)
+v->w: (1, 4)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 30
+Player 1: 103
+Player 2: 103
+Player 3: 103
+------------------------------------
+>>>Profile (3, 2, 2, 3) (Social cost: 2254):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (4, 20)
+s->w: (19, 70)
+v->t: (0, 3)
+v->w: (4, 73)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 117
+Player 1: 94
+Player 2: 94
+Player 3: 117
+------------------------------------
+>>>Profile (3, 2, 3, 0) (Social cost: 12244):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (10, 110)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 1152
+Player 1: 64
+Player 2: 1152
+Player 3: 28
+------------------------------------
+>>>Profile (3, 2, 3, 1) (Social cost: 13462):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (3, 12)
+v->w: (10, 1021)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 1224
+Player 1: 64
+Player 2: 1224
+Player 3: 194
+------------------------------------
+>>>Profile (3, 2, 3, 2) (Social cost: 12538):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (10, 110)
+s->w: (13, 52)
+v->t: (0, 3)
+v->w: (10, 1021)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 1155
+Player 1: 76
+Player 2: 1155
+Player 3: 76
+------------------------------------
+>>>Profile (3, 2, 3, 3) (Social cost: 32260):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (13, 182)
+s->w: (10, 43)
+v->t: (0, 3)
+v->w: (13, 2224)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 2430
+Player 1: 67
+Player 2: 2430
+Player 3: 2430
+------------------------------------
+>>>Profile (3, 3, 0, 0) (Social cost: 37226):
+Arc: (Flow, Cost)
+s->t: (12, 1729)
+s->v: (11, 132)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (11, 1354)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 1498
+Player 1: 1498
+Player 2: 1729
+Player 3: 1729
+------------------------------------
+>>>Profile (3, 3, 0, 1) (Social cost: 24572):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (11, 1354)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 1576
+Player 1: 1576
+Player 2: 730
+Player 3: 222
+------------------------------------
+>>>Profile (3, 3, 0, 2) (Social cost: 23192):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (11, 132)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (11, 1354)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 1501
+Player 1: 1501
+Player 2: 730
+Player 3: 37
+------------------------------------
+>>>Profile (3, 3, 0, 3) (Social cost: 48542):
+Arc: (Flow, Cost)
+s->t: (9, 730)
+s->v: (14, 210)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (14, 2773)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 2998
+Player 1: 2998
+Player 2: 730
+Player 3: 2998
+------------------------------------
+>>>Profile (3, 3, 1, 0) (Social cost: 24266):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (11, 1354)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 1786
+Player 1: 1786
+Player 2: 504
+Player 3: 28
+------------------------------------
+>>>Profile (3, 3, 1, 1) (Social cost: 29486):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (12, 147)
+v->w: (11, 1354)
+w->t: (11, 12)
+>>>Player costs:
+Player 0: 1918
+Player 1: 1918
+Player 2: 699
+Player 3: 699
+------------------------------------
+>>>Profile (3, 3, 1, 2) (Social cost: 24326):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (9, 84)
+v->w: (11, 1354)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 1789
+Player 1: 1789
+Player 2: 504
+Player 3: 37
+------------------------------------
+>>>Profile (3, 3, 1, 3) (Social cost: 52484):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (9, 84)
+v->w: (14, 2773)
+w->t: (14, 15)
+>>>Player costs:
+Player 0: 3340
+Player 1: 3340
+Player 2: 636
+Player 3: 3340
+------------------------------------
+>>>Profile (3, 3, 2, 0) (Social cost: 17210):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (11, 132)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (11, 1354)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 1507
+Player 1: 1507
+Player 2: 61
+Player 3: 28
+------------------------------------
+>>>Profile (3, 3, 2, 1) (Social cost: 18650):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (3, 12)
+v->w: (11, 1354)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 1585
+Player 1: 1585
+Player 2: 61
+Player 3: 222
+------------------------------------
+>>>Profile (3, 3, 2, 2) (Social cost: 17486):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (11, 132)
+s->w: (12, 49)
+v->t: (0, 3)
+v->w: (11, 1354)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 1510
+Player 1: 1510
+Player 2: 73
+Player 3: 73
+------------------------------------
+>>>Profile (3, 3, 2, 3) (Social cost: 42674):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (14, 210)
+s->w: (9, 40)
+v->t: (0, 3)
+v->w: (14, 2773)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 3007
+Player 1: 3007
+Player 2: 64
+Player 3: 3007
+------------------------------------
+>>>Profile (3, 3, 3, 0) (Social cost: 169724):
+Arc: (Flow, Cost)
+s->t: (3, 28)
+s->v: (20, 420)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (20, 8041)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 8482
+Player 1: 8482
+Player 2: 8482
+Player 3: 28
+------------------------------------
+>>>Profile (3, 3, 3, 1) (Social cost: 173972):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (3, 12)
+v->w: (20, 8041)
+w->t: (20, 21)
+>>>Player costs:
+Player 0: 8614
+Player 1: 8614
+Player 2: 8614
+Player 3: 564
+------------------------------------
+>>>Profile (3, 3, 3, 2) (Social cost: 169838):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (20, 420)
+s->w: (3, 22)
+v->t: (0, 3)
+v->w: (20, 8041)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 8485
+Player 1: 8485
+Player 2: 8485
+Player 3: 46
+------------------------------------
+>>>Profile (3, 3, 3, 3) (Social cost: 294170):
+Arc: (Flow, Cost)
+s->t: (0, 1)
+s->v: (23, 552)
+s->w: (0, 13)
+v->t: (0, 3)
+v->w: (23, 12214)
+w->t: (23, 24)
+>>>Player costs:
+Player 0: 12790
+Player 1: 12790
+Player 2: 12790
+Player 3: 12790
+^^^=====================================================^^^
