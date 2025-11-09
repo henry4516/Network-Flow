@@ -9,7 +9,7 @@
 ## A Path is a sorted list of Edge [v1v2, v2v3, ..., vk-1vk], and no duplicates.
 ## A Cycle is a Path such that v1 = vk.
 ## A Dipath is a sorted list of Arc [v1v2, v2v3, ..., vk-1vk], and no dups.
-## A Dicycle is a Dipath such that v1 = vk.
+## A Dicycle is a Dipath except for v1 = vk.
 ## An OrienCycle is oriented cycle such that edges are arcs, in either direction.
 ## An OrienPath is oriented path such that edges are arcs, in either direction.
 
@@ -28,7 +28,6 @@
 ### ***This constraint applies to all functions below***
 ### For any input graph/digraph, namely set of vertices/nodes and set of edges/arcs, they are matched (i.e. they can form a valid tree)
 ### Constraints involving endpoints of all edges/arcs are contained in the set of vertices/nodes.
-
 
 
 
@@ -165,6 +164,7 @@ def cut(vertices, edges):
     """
     cut(nodes, edges) returns the cut induced by nodes.
     cut: (setof Vertex) (setof Edge) -> (setof Edge)
+    Cost: O(nm), n is the number of vertices, m is the number of edges.
     
     """
     cut = set()
@@ -181,6 +181,7 @@ def incident_edges(edges, v):
     """
     incident_edges(edges, v) returns the set of edges in edges with one endpoint v.
     incident_edges: (setof Edge) Vertex -> (setof Edge)
+    Cost: O(m), m is the number of edges.
 
     """
     return {edge for edge in edges if v in edge}
@@ -189,6 +190,7 @@ def neighbours(edges, v):
     """
     neighbours(edges, vertex) returns the vertices that are incident to v.
     neighbours: (setof Edge) Vertex -> (setof Vertex)
+    Cost: O(m), m is the number of edges in edges.
 
     """
     return {edge.other(v) for edge in edges if not edge.other(v) is False}
@@ -203,6 +205,7 @@ def if_connected(edges, vertices):
     Method 2: BFS with colors to explore all vertices.
 
     if_connected: (setof Edge) (setof Vertex) -> Bool
+    Cost: O()
     
     """
     
@@ -256,6 +259,7 @@ def find_path(edges, i, j, visited_v = None, length = 0, avoid_edges = None, pro
     use DFS logic.
     find_path: (setof Edge) Vertex Vertex Edge (setof Vertex) Bool -> (anyof Path False)
     Requires: not used for finding cycle.
+    Cost: O()
 
     """
     assert i != j, "cannot use for cycle"
@@ -489,6 +493,7 @@ def head_arcs(node, arcs):
     """
     head_arcs(node, arcs) returns a set of arcs with head node.
     head_arcs: Node (setof Arc) -> (setof Arc)
+    Cost: O(m), m is the number of arcs
     
     """
     """
@@ -503,6 +508,7 @@ def tail_arcs(node, arcs):
     """
     tail_arcs(node, arcs) returns a set of arcs with tail node.
     head_arcs: Node (setof Arc) -> (setof Arc)
+    Cost: O(m), m is the number of arcs
     
     """
     """
@@ -518,6 +524,7 @@ def dicut(nodes, arcs):
     """
     dicut(nodes, arcs) returns the cut of arcs induced by nodes.
     dicut: (setof Node) (setof Arc) -> (setof Arc)
+    Cost: O(nm), n is the number of nodes, m is the number of arcs
     
     """
     """
@@ -542,6 +549,7 @@ def arcs_to_edges(arcs):
     """
     arcs_to_edges(arcs) transforms a set of Arc into Edge.
     arcs_to_edges: (setof Arc) -> (setof Edge)
+    Cost: O(m), m is the number of arcs.
     
     """
     return {arc_to_edge(arc) for arc in arcs}
@@ -550,6 +558,7 @@ def arcs_to_nodes(arcs):
     """
     arcs_to_nodes(arcs) transforms arcs to nodes.
     arcs_to_nodes: (setof Arc) -> (setof Node)
+    Cost: O()
 
     """
     nodes = set()
@@ -562,6 +571,7 @@ def dipath_to_nodes(dipath):
     """
     dipath_to_nodes(dipath) consumes a dipath and converts it to nodes.
     dipath_to_nodes: Dipath -> (listof Node)
+    Cost: O(n), n is the number of arcs in dipath.
 
     """
     nodes = []
@@ -571,6 +581,27 @@ def dipath_to_nodes(dipath):
         if i == (length - 1):
             nodes.append(dipath[i].head())
     return nodes
+
+def path_compare(path1, path2):
+    '''
+    Compare two paths by:
+    1. length
+    2. lexicographic order
+    
+    '''
+    if len(path1) < len(path2):
+        return -1
+    elif len(path1) > len(path2):
+        return 1
+    else:
+        for i in range(len(path1)):
+            if path1[i] < path2[i]:
+                return -1
+            elif path1[i] > path2[i]:
+                return 1
+            else:
+                continue
+    return 0
 
 def find_dipath(arcs, i, j, visited_nodes = None, limit = None, length = 0, avoid_arcs = None, avoid_nodes = None, process = False):
     """
@@ -679,6 +710,8 @@ def print_paths(paths):
     """
     print_paths(paths) prints the paths/dipaths pretty.
     print_paths: (listof Path/Dipath) -> None
+    Effects: prints paths
+    Cost: O(n), n is the number of paths in paths.
 
     """
     length = len(paths)
@@ -694,6 +727,9 @@ def all_disjoint_dipaths(arcs, i, j, limit = None, if_print = False):
     all_paths: (setof Arc) Vertex/Node Node Bool -> (listof Dipath)
 
     the output is not unique, which depends on the order of visited arcs.
+
+    Effects: might print paths
+    Cost: as well as the cost of finding an ij-dipath.
 
     """
     result = []
@@ -764,6 +800,7 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
     find all dipaths/dicycles from i to j.
     First find cut at i, then find vj-dipath for all arc iv in cut at i.
     Requires: result is a valid list. i, j not in avoid nodes.
+    Effects: will mutate the input result.
     Features: the ouput is unique, regardless the order of dipaths found. Can use for finding dicycles.
     """
 
@@ -781,7 +818,7 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
     middle = i_canreach & canreach_j
     """
     #assert i != j, "cannot use for dicycle"
-    if not limit is None:
+    if limit is not None:
         if length >= limit:
             if process:
                 print("exceed length limit")
@@ -791,10 +828,10 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
     if result is None:
         result = []
     if visited_nodes is None:
-        visited_nodes = []
-    #visited_nodes.append(i) cannot do this. mutates the data that will be used by the parent call.
-    new_visited = visited_nodes.copy()
-    new_visited.append(i)
+        visited_nodes = set()
+    visited_nodes.add(i)
+    #new_visited = visited_nodes.copy()
+    #new_visited.append(i)
     i_cut = tail_arcs(i, arcs)
     if process:
         print(f"finding {i},{j}-dipath:")
@@ -809,12 +846,12 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
     for arc in i_cut:
         if process:
             print(f">>>>>>>>>>>>> now on arc {arc}")
-        if not avoid_arcs is None:
+        if avoid_arcs is not None:
             if arc in avoid_arcs:
                 if process:
                     print(f"avoid using arc {arc}")
                 continue
-        if not avoid_nodes is None:
+        if avoid_nodes is not None:
             if arc.head() in avoid_nodes:
                 if process:
                     print(f"avoid using node {arc.head()}")
@@ -831,7 +868,10 @@ def find_all_dipaths_dicycles(arcs, i, j, visited_nodes = None, result = None, t
             if process:
                 print(f"{arc.head()} is visited. skipping this arc {arc}")
             continue
-        find_all_dipaths_dicycles(arcs, arc.head(), j, new_visited, result, temp_dipath + [arc], limit, length + 1, avoid_arcs, avoid_nodes, process)
+        temp_dipath.append(arc)
+        find_all_dipaths_dicycles(arcs, arc.head(), j, visited_nodes, result, temp_dipath, limit, length + 1, avoid_arcs, avoid_nodes, process)
+        temp_dipath.remove(arc)
+    visited_nodes.remove(i)
     #return False
 
 def all_dipaths(arcs, i, j, limit = None, avoid_arcs = None, avoid_nodes = None, if_print = False, process = False):
