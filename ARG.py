@@ -1,4 +1,4 @@
-# Atomic Selfish Routing Game
+# Atomic Selfish Routing Game based on Graphs.py
 import Graphs as graph
 import itertools as it
 import functools as ft
@@ -201,7 +201,7 @@ class ARG:
         return min_cost, tuple(opt_profiles)
             
 
-
+# sample uses
 if __name__ == "__main__":
     #Goemans, Mirrokni, Vetta atomic selfish routing instance
     GMV = {graph.Arc('s','w'),graph.Arc('s','v'),graph.Arc('s','t'),graph.Arc('v','w'),graph.Arc('v','t'),graph.Arc('w','t')}
