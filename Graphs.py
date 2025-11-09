@@ -605,13 +605,12 @@ def path_compare(path1, path2):
 
 def find_dipath(arcs, i, j, visited_nodes = None, limit = None, length = 0, avoid_arcs = None, avoid_nodes = None, process = False):
     """
-    find_dipath(arcs, i, j, visited_nodes, limit, length, avoid_arcs, process) finds a ij-dipath in the graph with DFS logic. Will return a list of ordered arcs as a path if found.
+    Finds a ij-dipath in the graph with DFS logic. Will return a list of ordered arcs as a path if found.
     Will return False otherwise. Will avoid using edges in avoid_arcs. Will track the length from starting point. Will stop searching if exceed the length limit.
     will print searching process if process is on.
     The program is designed to handle digraphs with dicycles.
     Could give different results if multiple ij-dipaths exist, depending on the first found dipath.
     If the input is a tree, there exists a unique dipath if any.
-    Requires: Cannot find dicycle. i != j. i, j not in avoid_nodes.
     Input: arcs, visited_nodes, avoid_edges are sets of arcs
     """
     assert i != j, "cannot use for dicycle"
